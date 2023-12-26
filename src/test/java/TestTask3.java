@@ -10,7 +10,8 @@ public class TestTask3 {
     @Test
     public void testRealImageLoadingTime() {
         long startTime = System.currentTimeMillis();
-        RealImage realImage = new RealImage("./src/main/java/com/example/task3/StarWars.jpg");
+        RealImage realImage = new RealImage(
+            "./src/main/java/com/example/task3/StarWars.jpg");
         realImage.display();
         long endTime = System.currentTimeMillis();
         long loadingTime = endTime - startTime;

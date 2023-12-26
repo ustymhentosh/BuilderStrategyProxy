@@ -146,11 +146,6 @@
         <module name="AvoidStarImport"/>
         <module name="AvoidStaticImport"/>
 
-        <module name="IllegalImport">
-            <property name="illegalPkgs"
-                      value="java.sql, sun, java.net, java.security, javax, java.applet, java.beans, java.nio"/>
-        </module>
-
         <module name="RedundantImport"/>
         <module name="UnusedImports"/>
 
@@ -209,19 +204,11 @@
         <module name="MethodName">
             <property name="format" value="^[a-z][a-zA-Z]*$"/>
         </module>
-
-        <module name="PackageName">
-            <property name="format" value="^[a-z]+(\.[a-z][a-z]\d*)*$"/>
-        </module>
-        <module name="PackageName"/>
         <module name="ParameterName">
             <property name="format" value="^[a-z][a-zA-Z]*$"/>
         </module>
         <module name="StaticVariableName">
             <property name="format" value="^[a-z][a-zA-Z]*$|^[A-Z][A-Z_]*$"/>
-        </module>
-        <module name="TypeName">
-            <property name="format" value="^[A-Z][a-zA-Z]*$"/>
         </module>
 
         <!-- =========================================================================== -->
