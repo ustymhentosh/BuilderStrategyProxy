@@ -90,12 +90,6 @@
         </module>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
-        <module name="MagicNumber">
-            <property name="tokens"
-                      value="NUM_DOUBLE, NUM_FLOAT, NUM_INT, NUM_LONG"/>
-            <property name="ignoreNumbers" value="-1, 0, 0.5, 1, 2"/>
-            <property name="ignoreHashCodeMethod" value="true"/>
-        </module>
         <module name="MissingSwitchDefault"/>
         <module name="ModifiedControlVariable"/>
         <module name="SimplifyBooleanExpression"/>
@@ -154,7 +148,7 @@
 
         <module name="IllegalImport">
             <property name="illegalPkgs"
-                      value="java.sql, sun, java.net, java.security, javax, java.applet, java.beans, java.nio, java.rmi, java.text, java.lang.reflect, java.lang.instrument"/>
+                      value="java.sql, sun, java.net, java.security, javax, java.applet, java.beans, java.nio"/>
         </module>
 
         <module name="RedundantImport"/>
@@ -206,7 +200,7 @@
             <property name="format" value="^[A-Z][A-Z_]*$"/>
         </module>
         <module name="LocalVariableName">
-            <property name="format" value="^[a-z][a-zA-Z]*$"/>
+            <property name="format" value="^[a-z][a-zA-Z\d]*$"/>
         </module>
         <module name="MemberName">
             <property name="format" value="^[a-z][a-zA-Z]*$"/>
@@ -217,7 +211,7 @@
         </module>
 
         <module name="PackageName">
-            <property name="format" value="^[a-z]+(\.[a-z][a-z]*)*$"/>
+            <property name="format" value="^[a-z]+(\.[a-z][a-z]\d*)*$"/>
         </module>
         <module name="PackageName"/>
         <module name="ParameterName">

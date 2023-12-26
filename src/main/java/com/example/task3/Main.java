@@ -2,7 +2,8 @@ package com.example.task3;
 
 public class Main {
     public static void main(String[] args) {
-        ProxyImage proxyImage = new ProxyImage("./src/main/java/com/example/task3/StarWars.jpg");
+        ProxyImage proxyImage = new ProxyImage(
+            "./src/main/java/com/example/task3/StarWars.jpg");
         proxyImage.display();
     }
 }
