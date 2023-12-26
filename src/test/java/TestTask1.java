@@ -33,7 +33,8 @@ public class TestTask1 {
                 .height(160.0)
                 .build();
 
-        String expectedToString = "User(name=Alice, age=30, gender=FEMALE, weight=60.0, height=160.0)";
+        String expectedToString = "User(name=Alice, age=30, gender"
+                + "=FEMALE, weight=60.0, height=160.0)";
         assertEquals(expectedToString, user.toString());
     }
 
